@@ -67,31 +67,10 @@ xtile Niveau_quintile = quintile, nq(5)
 
 ---
 
-## Prérequis
-
-- **Logiciel :** Stata 14 ou version supérieure
-- **Package requis :** `fac` (factorisation / ACP)
-
-```stata
-ssc install factortest  // si non installé
-```
-
 - **Données d'entrée :** Variables `C1`–`C10` et `D1`–`D29` présentes dans le jeu de données
 
 ---
 
-## Utilisation
-
-```stata
-* Charger les données
-use "votre_base_de_donnees.dta", clear
-
-* Exécuter le script
-do "calcul_quintile.do"
-
-* Vérifier les résultats
-tab Niveau_quintile
-```
 
 ---
 
